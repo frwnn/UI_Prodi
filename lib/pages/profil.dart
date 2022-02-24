@@ -62,97 +62,213 @@ class _ProfilePageState extends State<ProfilePage> {
               Expanded(child: Center(child: Text("Project"))),
             ],
           ),
-          SizedBox(height: 10),
-          ListTile(
-              title: Text("Credit"),
-              subtitle: Text("Ini program studi Kredit"),
-              leading: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.red[400],
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Container(
+                  width: 70,
+                  height: 100,
+                  color: Colors.red[600],
+                  child: new Icon(
+                    Icons.school,
+                    color: Colors.white,
+                    size: 40,
                   ),
-                  Icon(Icons.school, size: 50, color: Colors.white)
-                ],
-              )),
-          SizedBox(height: 10),
-          ListTile(
-              title: Text("Sales"),
-              subtitle: Text("Ini program studi Sales"),
-              leading: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.yellow[400],
+                ),
+                Expanded(
+                    child: Container(
+                  padding: EdgeInsets.all(15),
+                  height: 100,
+                  color: Colors.white,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Credit",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                          )),
+                      Text(
+                        "Ini program studi Credit",
+                        style: TextStyle(color: Colors.black),
+                      )
+                    ],
                   ),
-                  Icon(Icons.school, size: 50, color: Colors.white)
-                ],
-              )),
-          SizedBox(height: 10),
-          ListTile(
-              title: Text("Collection"),
-              subtitle: Text("Ini program studi Collection"),
-              leading: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.blue[400],
+                ))
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Container(
+                  width: 70,
+                  height: 100,
+                  color: Colors.yellow[600],
+                  child: new Icon(
+                    Icons.school,
+                    color: Colors.white,
+                    size: 40,
                   ),
-                  Icon(Icons.school, size: 50, color: Colors.white)
-                ],
-              )),
-          SizedBox(height: 10),
-          ListTile(
-              title: Text("Manajemen Operasional & Kualitas"),
-              subtitle:
-                  Text("Ini program studi Manajemen Operasional & Kualitas"),
-              leading: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.green[400],
+                ),
+                Expanded(
+                    child: Container(
+                  padding: EdgeInsets.all(15),
+                  height: 100,
+                  color: Colors.white,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Sales",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                      Text(
+                        "Ini program studi Sales",
+                        style: TextStyle(color: Colors.black),
+                      )
+                    ],
                   ),
-                  Icon(Icons.school, size: 50, color: Colors.white)
-                ],
-              )),
-          SizedBox(height: 10),
-          ListTile(
-              title: Text("Logistic & Supply Chain"),
-              subtitle: Text("Ini program studi Logistic & Supply Chain"),
-              leading: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.red[400],
+                ))
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Container(
+                  width: 70,
+                  height: 100,
+                  color: Colors.green[600],
+                  child: new Icon(
+                    Icons.school,
+                    color: Colors.white,
+                    size: 40,
                   ),
-                  Icon(Icons.school, size: 50, color: Colors.white)
-                ],
-              )),
-          SizedBox(height: 10),
-          ListTile(
-              title: Text("Ekspor & Impor"),
-              subtitle: Text("Ini program studi Ekspor & Impor"),
-              leading: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.yellow[400],
+                ),
+                Expanded(
+                    child: Container(
+                  padding: EdgeInsets.all(15),
+                  height: 100,
+                  color: Colors.white,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Collection",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                      Text(
+                        "Ini program studi Collection",
+                        style: TextStyle(color: Colors.black),
+                      )
+                    ],
                   ),
-                  Icon(Icons.school, size: 50, color: Colors.white)
-                ],
-              )),
+                ))
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Container(
+                  width: 70,
+                  height: 100,
+                  color: Colors.blue[600],
+                  child: new Icon(
+                    Icons.school,
+                    color: Colors.white,
+                    size: 40,
+                  ),
+                ),
+                Expanded(
+                    child: Container(
+                  padding: EdgeInsets.all(15),
+                  height: 100,
+                  color: Colors.white,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Manajemen Operasional & Kualitas",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                      Text(
+                        "Ini program studi Manajemen Operasional & Kualitas",
+                        style: TextStyle(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ))
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Container(
+                  width: 70,
+                  height: 100,
+                  color: Colors.red[600],
+                  child: new Icon(
+                    Icons.school,
+                    color: Colors.white,
+                    size: 40,
+                  ),
+                ),
+                Expanded(
+                    child: Container(
+                  padding: EdgeInsets.all(15),
+                  height: 100,
+                  color: Colors.white,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Logistic & Supply Chain",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                      Text(
+                        "Ini program studi Logistic & Supply Chain",
+                        style: TextStyle(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ))
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Container(
+                  width: 70,
+                  height: 100,
+                  color: Colors.yellow[600],
+                  child: new Icon(
+                    Icons.school,
+                    color: Colors.white,
+                    size: 40,
+                  ),
+                ),
+                Expanded(
+                    child: Container(
+                  padding: EdgeInsets.all(15),
+                  height: 100,
+                  color: Colors.white,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Ekspor & Impor",
+                          style: TextStyle(color: Colors.black, fontSize: 15)),
+                      Text(
+                        "Ini program studi Ekspor & Impor",
+                        style: TextStyle(color: Colors.black),
+                      )
+                    ],
+                  ),
+                ))
+              ],
+            ),
+          ),
         ],
       ),
     );
